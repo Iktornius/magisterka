@@ -31,8 +31,8 @@ def baseline_als(y, lam, p, niter=10):
   return z
 
 #################
-
-read = np.genfromtxt((conv(x) for x in open('13G-mapa-0009.CSV')), delimiter=';')
+csv = input('CSV Filename: ')
+read = np.genfromtxt((conv(x) for x in open(csv)), delimiter=';')
 
 pre_x = read[:,0]
 
