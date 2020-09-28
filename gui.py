@@ -2,7 +2,6 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLay
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import *
 import main_area
-import pyperclip
 
 app = QApplication([])
 window = QWidget()
@@ -22,10 +21,6 @@ def openfile():
         return None
     return filename
 
-
-#def cpres(results):
-#    pyperclip.copy(results)
-#    return 0
 
 
 def run():
